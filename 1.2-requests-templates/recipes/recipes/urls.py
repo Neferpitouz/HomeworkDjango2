@@ -15,7 +15,10 @@ Including another URLconf
 """
 
 from django.urls import path
+from recipes.calculator.views import cooker
+
 
 urlpatterns = [
     # здесь зарегистрируйте вашу view-функцию
+    path('pasta/', cooker),
 ]
