@@ -20,5 +20,5 @@ from recipes.calculator.views import cooker
 
 urlpatterns = [
     # здесь зарегистрируйте вашу view-функцию
-    path('pasta/', cooker),
+    path('pasta/<int:servings>', cooker),
 ]
